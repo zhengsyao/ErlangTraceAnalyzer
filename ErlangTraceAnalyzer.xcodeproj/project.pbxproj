@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281744C7157852AC00DC3B10 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 281744C6157852AC00DC3B10 /* libsqlite3.dylib */; };
+		287487A51574A68F008D4841 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287487A41574A68E008D4841 /* Cocoa.framework */; };
+		287487AF1574A68F008D4841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 287487AD1574A68F008D4841 /* InfoPlist.strings */; };
+		287487B11574A68F008D4841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 287487B01574A68F008D4841 /* main.m */; };
+		287487B51574A68F008D4841 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 287487B31574A68F008D4841 /* Credits.rtf */; };
+		287487B81574A68F008D4841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 287487B71574A68F008D4841 /* AppDelegate.m */; };
+		287487BB1574A68F008D4841 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287487B91574A68F008D4841 /* MainMenu.xib */; };
+		2881FD541574A8BA00177D96 /* TraceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2881FD531574A8BA00177D96 /* TraceView.m */; };
+		2881FD5C1574B34E00177D96 /* TraceeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2881FD5B1574B34E00177D96 /* TraceeObject.m */; };
+		2881FD631574B80800177D96 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2881FD621574B80800177D96 /* AppController.m */; };
+		2881FD661574BCDC00177D96 /* ErlangProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2881FD651574BCDC00177D96 /* ErlangProcess.m */; };
+		28F6E08D157C8AA300BB827C /* PointEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F6E08C157C8AA300BB827C /* PointEvent.m */; };
+		28F6E091157C92BA00BB827C /* SpawnEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F6E090157C92B900BB827C /* SpawnEvent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		281744C6157852AC00DC3B10 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		283E1C251577AC80009027A0 /* TraceDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraceDataSourceProtocol.h; sourceTree = "<group>"; };
+		287487A01574A68E008D4841 /* ErlangTraceAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErlangTraceAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		287487A41574A68E008D4841 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		287487A71574A68F008D4841 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		287487A81574A68F008D4841 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		287487A91574A68F008D4841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		287487AC1574A68F008D4841 /* ErlangTraceAnalyzer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ErlangTraceAnalyzer-Info.plist"; sourceTree = "<group>"; };
+		287487AE1574A68F008D4841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		287487B01574A68F008D4841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		287487B21574A68F008D4841 /* ErlangTraceAnalyzer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ErlangTraceAnalyzer-Prefix.pch"; sourceTree = "<group>"; };
+		287487B41574A68F008D4841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		287487B61574A68F008D4841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		287487B71574A68F008D4841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		287487BA1574A68F008D4841 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2881FD521574A8BA00177D96 /* TraceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraceView.h; sourceTree = "<group>"; };
+		2881FD531574A8BA00177D96 /* TraceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraceView.m; sourceTree = "<group>"; };
+		2881FD5A1574B34E00177D96 /* TraceeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraceeObject.h; sourceTree = "<group>"; };
+		2881FD5B1574B34E00177D96 /* TraceeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraceeObject.m; sourceTree = "<group>"; };
+		2881FD611574B80800177D96 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2881FD621574B80800177D96 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2881FD641574BCDC00177D96 /* ErlangProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErlangProcess.h; sourceTree = "<group>"; };
+		2881FD651574BCDC00177D96 /* ErlangProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErlangProcess.m; sourceTree = "<group>"; };
+		28F6E08B157C8AA200BB827C /* PointEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointEvent.h; sourceTree = "<group>"; };
+		28F6E08C157C8AA300BB827C /* PointEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointEvent.m; sourceTree = "<group>"; };
+		28F6E08F157C92B900BB827C /* SpawnEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnEvent.h; sourceTree = "<group>"; };
+		28F6E090157C92B900BB827C /* SpawnEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnEvent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2874879D1574A68E008D4841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281744C7157852AC00DC3B10 /* libsqlite3.dylib in Frameworks */,
+				287487A51574A68F008D4841 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		287487951574A68E008D4841 = {
+			isa = PBXGroup;
+			children = (
+				287487AA1574A68F008D4841 /* ErlangTraceAnalyzer */,
+				287487A31574A68E008D4841 /* Frameworks */,
+				287487A11574A68E008D4841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		287487A11574A68E008D4841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				287487A01574A68E008D4841 /* ErlangTraceAnalyzer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		287487A31574A68E008D4841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				281744C6157852AC00DC3B10 /* libsqlite3.dylib */,
+				287487A41574A68E008D4841 /* Cocoa.framework */,
+				287487A61574A68F008D4841 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287487A61574A68F008D4841 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				287487A71574A68F008D4841 /* AppKit.framework */,
+				287487A81574A68F008D4841 /* CoreData.framework */,
+				287487A91574A68F008D4841 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		287487AA1574A68F008D4841 /* ErlangTraceAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				287487B61574A68F008D4841 /* AppDelegate.h */,
+				287487B71574A68F008D4841 /* AppDelegate.m */,
+				287487B91574A68F008D4841 /* MainMenu.xib */,
+				2881FD611574B80800177D96 /* AppController.h */,
+				2881FD621574B80800177D96 /* AppController.m */,
+				2881FD521574A8BA00177D96 /* TraceView.h */,
+				2881FD531574A8BA00177D96 /* TraceView.m */,
+				283E1C251577AC80009027A0 /* TraceDataSourceProtocol.h */,
+				2881FD5A1574B34E00177D96 /* TraceeObject.h */,
+				2881FD5B1574B34E00177D96 /* TraceeObject.m */,
+				2881FD641574BCDC00177D96 /* ErlangProcess.h */,
+				2881FD651574BCDC00177D96 /* ErlangProcess.m */,
+				28F6E08B157C8AA200BB827C /* PointEvent.h */,
+				28F6E08C157C8AA300BB827C /* PointEvent.m */,
+				28F6E08F157C92B900BB827C /* SpawnEvent.h */,
+				28F6E090157C92B900BB827C /* SpawnEvent.m */,
+				287487AB1574A68F008D4841 /* Supporting Files */,
+			);
+			path = ErlangTraceAnalyzer;
+			sourceTree = "<group>";
+		};
+		287487AB1574A68F008D4841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				287487AC1574A68F008D4841 /* ErlangTraceAnalyzer-Info.plist */,
+				287487AD1574A68F008D4841 /* InfoPlist.strings */,
+				287487B01574A68F008D4841 /* main.m */,
+				287487B21574A68F008D4841 /* ErlangTraceAnalyzer-Prefix.pch */,
+				287487B31574A68F008D4841 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2874879F1574A68E008D4841 /* ErlangTraceAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287487BE1574A68F008D4841 /* Build configuration list for PBXNativeTarget "ErlangTraceAnalyzer" */;
+			buildPhases = (
+				2874879C1574A68E008D4841 /* Sources */,
+				2874879D1574A68E008D4841 /* Frameworks */,
+				2874879E1574A68E008D4841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ErlangTraceAnalyzer;
+			productName = ErlangTraceAnalyzer;
+			productReference = 287487A01574A68E008D4841 /* ErlangTraceAnalyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		287487971574A68E008D4841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2874879A1574A68E008D4841 /* Build configuration list for PBXProject "ErlangTraceAnalyzer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 287487951574A68E008D4841;
+			productRefGroup = 287487A11574A68E008D4841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2874879F1574A68E008D4841 /* ErlangTraceAnalyzer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2874879E1574A68E008D4841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287487AF1574A68F008D4841 /* InfoPlist.strings in Resources */,
+				287487B51574A68F008D4841 /* Credits.rtf in Resources */,
+				287487BB1574A68F008D4841 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2874879C1574A68E008D4841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287487B11574A68F008D4841 /* main.m in Sources */,
+				287487B81574A68F008D4841 /* AppDelegate.m in Sources */,
+				2881FD541574A8BA00177D96 /* TraceView.m in Sources */,
+				2881FD5C1574B34E00177D96 /* TraceeObject.m in Sources */,
+				2881FD631574B80800177D96 /* AppController.m in Sources */,
+				2881FD661574BCDC00177D96 /* ErlangProcess.m in Sources */,
+				28F6E08D157C8AA300BB827C /* PointEvent.m in Sources */,
+				28F6E091157C92BA00BB827C /* SpawnEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		287487AD1574A68F008D4841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287487AE1574A68F008D4841 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		287487B31574A68F008D4841 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287487B41574A68F008D4841 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		287487B91574A68F008D4841 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				287487BA1574A68F008D4841 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		287487BC1574A68F008D4841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		287487BD1574A68F008D4841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		287487BF1574A68F008D4841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ErlangTraceAnalyzer/ErlangTraceAnalyzer-Prefix.pch";
+				INFOPLIST_FILE = "ErlangTraceAnalyzer/ErlangTraceAnalyzer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		287487C01574A68F008D4841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ErlangTraceAnalyzer/ErlangTraceAnalyzer-Prefix.pch";
+				INFOPLIST_FILE = "ErlangTraceAnalyzer/ErlangTraceAnalyzer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2874879A1574A68E008D4841 /* Build configuration list for PBXProject "ErlangTraceAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287487BC1574A68F008D4841 /* Debug */,
+				287487BD1574A68F008D4841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287487BE1574A68F008D4841 /* Build configuration list for PBXNativeTarget "ErlangTraceAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287487BF1574A68F008D4841 /* Debug */,
+				287487C01574A68F008D4841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 287487971574A68E008D4841 /* Project object */;
+}

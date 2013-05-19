@@ -1,0 +1,97 @@
+global start_time
+
+probe begin
+{
+    printf("%%\n");
+    start_time = gettimeofday_ns();
+}
+
+probe process("beam.smp").mark("message__send")
+{
+    printf("%d|%d|send|%s|%s|%d|%d|%d|%d\n",
+           cpu(),
+           gettimeofday_ns() - start_time,
+	       user_string($arg1),
+	       user_string($arg2),
+	       $arg3,$arg4, $arg5, $arg6);
+}
+
+probe process("beam.smp").mark("message__queued")
+{
+    printf("%d|%d|queued|%s|%d|%d|%d|%d|%d\n",
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           $arg2, $arg3, $arg4, $arg5, $arg6);
+}
+
+probe process("beam.smp").mark("message__receive")
+{
+    printf("%d|%d|receive|%s|%d|%d|%d|%d|%d\n",
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           $arg2, $arg3, $arg4, $arg5, $arg6);
+}
+
+probe process("beam.smp").mark("process__scheduled")
+{
+    printf("%d|%d|schedule|%s|%s\n",
+           cpu(),
+           gettimeofday_ns() - start_time, 
+           user_string($arg1), 
+           user_string($arg2));
+}
+
+probe process("beam.smp").mark("process__unscheduled")
+{
+    printf("%d|%d|unschedule|%s\n", 
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1));
+}
+
+probe process("beam.smp").mark("process__hibernate")
+{
+    printf("%d|%d|hibernate|%s|%s\n",
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           user_string($arg2));
+}
+
+probe process("beam.smp").mark("process__spawn")
+{
+    printf("%d|%d|spawn|%s|%s\n", 
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           user_string($arg2));
+}
+
+probe process("beam.smp").mark("process__exit")
+{
+    printf("%d|%d|exit|%s|%s\n", 
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           user_string($arg2));
+}
+
+probe process("beam.smp").mark("process__exit_signal")
+{
+    printf("%d|%d|exit_signal|%s|%s|%s\n",
+           cpu(),
+           gettimeofday_ns() - start_time,
+           user_string($arg1), 
+           user_string($arg2), 
+           user_string($arg3));
+}
+
+/*
+probe process("beam.smp").mark("process__exit_signal__remote")
+{
+    printf("sender %s -> node %s pid %s reason %s\n",
+	   user_string($arg1), user_string($arg2), user_string($arg3), user_string($arg4));
+}
+*/
